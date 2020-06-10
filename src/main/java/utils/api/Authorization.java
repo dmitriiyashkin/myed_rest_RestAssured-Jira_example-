@@ -8,4 +8,6 @@ public class Authorization {
     public static String firstName = "Ivan";
     public static String lastName = "Ivanov";
     public static Integer password = 12345;
+    public static String id = "0";
+    public static Integer userStatus = 0;
 }
