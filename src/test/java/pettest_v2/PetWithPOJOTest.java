@@ -37,8 +37,6 @@ public class PetWithPOJOTest {
                 get("/user/login?username="+Authorization.username+"&password=" + Authorization.password).
                 then().
                 statusCode(200).contentType(ContentType.JSON);
-
-        System.out.println(response.extract().asString());
     }
 
 
