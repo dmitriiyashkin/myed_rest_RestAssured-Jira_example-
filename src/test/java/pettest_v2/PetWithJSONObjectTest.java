@@ -29,10 +29,11 @@ public class PetWithJSONObjectTest {
 
     @BeforeTest
     public void login() {
+
         response = given().
                 header("Content-Type", "application/json").
                 when().
-                get("/user/login?username=YaName&password=12345").
+                get("/user/login?username="+Authorization.username+"&password=" + Authorization.password).
                 then().
                 statusCode(200).contentType(ContentType.JSON);
     }
@@ -58,7 +59,7 @@ public class PetWithJSONObjectTest {
         response = given().
                 header("Content-Type", "application/json").
                 when().
-                delete("/user/YaName").
+                delete("/user/"+Authorization.username).
                 then().
                 statusCode(200).contentType(ContentType.JSON);
     }
