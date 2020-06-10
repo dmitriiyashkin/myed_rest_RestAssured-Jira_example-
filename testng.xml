@@ -3,11 +3,10 @@
 <suite name="All Test Suite">
 
 
-    <test verbose="2" preserve-order="true"
-          name="D:/github/myed_rest_RestAssured-Jira_example-/src/test/java/pettest_v2/PetWithJSONObjectTest.java">
+    <test name="Tests for REST api Petshops">
         <classes>
-            <class name="pettest_v2.PetWithJSONObjectTest">
-            </class>
+<!--            <class name="pettest_v1.RawPetTest"/>-->
+            <class name="pettest_v2.PetWithJSONObjectTest"/>
         </classes>
     </test>
 </suite>
